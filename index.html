@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header-cont">
+            <div class="izquierda">
+                <h1 title="Tarea Inputs Estilos"><a href="\">Tarea</a></h1>
+            </div> 
+            <div class="medio">
+                <p>Matias Morelli</p>
+            </div>
+            <div class="derecha">
+                <nav class="nav">
+                    <p><a target="_blank" href="https://github.com/MEM-Project">Git<span>Hub</span></a></p>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <form class="formulario contenedor" id="datos" action="">
+            <fieldset>
+
+                <div class="caja-form">
+                    <label>Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese el nombre">
+                </div>
+
+                <div class="caja-form">
+                    <label>Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese el apellido">
+                </div>
+                
+                <div class="caja-form">
+                    <label>Edad:</label>
+                    <input type="number" id="edad" name="edad" placeholder="Ingrese la edad">
+                </div>
+
+                <div class="caja-form">
+                    <label>Telefono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingrese el telefono">
+                </div>
+
+                <div class="caja-form">
+                    <label>Ciudad:</label>
+                    <select id="ciudad" name="ciudad">
+                        <optgroup label="Buenos aires">
+                                <option value="" disabled selected>--Seleccionar--</option>
+                                <option value="Chascomus">Chascomus</option>
+                                <option value="Ranchos">Ranchos</option>
+                                <option value="Lezama">Lezama</option>
+                                <option value="Castelli">Castelli</option>
+                                <option value="Otra">Otra ciudad en PBA</option>
+                            </optgroup>
+                            <optgroup label="Otras provincias">
+                                <option value="Otra">Otra ciudad fuera de PBA</option>
+                            </optgroup>
+                        </select>
+                </div>
+
+                <div class="caja-form">
+                    <label>Elige algunas de estas bandas</label>
+                    <input  id="musicaInput" list="musica" name="musica"  placeholder="Aguante Queen"/>
+                    <datalist id="musica">
+                        <option value="Queen" selected>Queen</option>
+                        <option value="Deep Purple">Deep Purple</option>
+                        <option value="AC/DC">AC/DC</option>
+                        <option value="Red Hot Chilli Peppers">Red Hot Chilli Peppers</option>
+                        <option value="Daft Punk">Daft Punk</option>
+                        <option value="Soda Stereo">Soda Stereo</option>
+                        <option value="The Beatles">The Beatles</option>
+                    </datalist>
+                </div>
+
+                <button class="btnForm" id="#btnFormulario" type="submit" id="enviar" value="Enviar">Enviar</button>
+
+            </fieldset>
+
+        </form>
+
+        <div class="informacion-datos contenedor">
+            <div class="info-datos-cont" id="contenedorInfo">
+                
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer class="footer">
+        <p>Todos los derechos reservados <span id="year"></span>&copy;</p>
+    </footer>
+
+    <script src="js/js.js"></script>
+
+</body>
+</html>
